@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Visual Crossing Weather App</string>
+    <string name="noInternetText">No internet connection</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="_73_f">73°F</string>
+    <string name="feels_like_73_f">Feels like 73°F</string>
+    <string name="partially_cloudy_25_clouds">Partially Cloudy (25% clouds)</string>
+    <string name="winds_ne_at_11_mph_gusting_to_10_mph">Winds: NE at 11 mph gusting to 10 mph</string>
+    <string name="humidity_82">Humidity: 82%</string>
+    <string name="uv_index_2">UV Index: 2</string>
+    <string name="visibility_9_9_mi">Visibility: 9.9 mi</string>
+    <string name="sunrise_6_04_am">Sunrise: 6:04 AM</string>
+</resources>
