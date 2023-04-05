@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OfficialsViewActivity">
+
+    <TextView
+        android:id="@+id/voLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#733ABA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/voName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewVO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voLocation" />
+
+    <ImageView
+        android:id="@+id/imageViewVO"
+        android:layout_width="169dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="onPhotoClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voLocation"
+        app:srcCompat="@drawable/missing" />
+
+    <TextView
+        android:id="@+id/voTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewVO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voName" />
+
+    <TextView
+        android:id="@+id/voParty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewVO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voTitle" />
+
+    <ImageView
+        android:id="@+id/voFaceBook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:onClick="onFacebookClick"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewVO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/voYouTube"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="onYoutubeClick"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewVO"
+        app:layout_constraintEnd_toStartOf="@+id/voTwitter"
+        app:layout_constraintStart_toEndOf="@+id/voFaceBook"
+        app:srcCompat="@drawable/youtube" />
+
+    <ImageView
+        android:id="@+id/voTwitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onTwitterClick"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewVO"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewVO"
+        app:srcCompat="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/voPartyClick"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="onPartyClick"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewVO"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewVO"
+        app:layout_constraintStart_toStartOf="@+id/imageViewVO"
+        app:srcCompat="@drawable/dem_logo" />
+
+    <TextView
+        android:id="@+id/voAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Address:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voFaceBook" />
+
+    <TextView
+        android:id="@+id/voAddressClick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onAddressClick"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/voAddress"
+        app:layout_constraintTop_toBottomOf="@+id/voAddress" />
+
+    <TextView
+        android:id="@+id/voPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Phone:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voAddressClick" />
+
+    <TextView
+        android:id="@+id/voPhoneClick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onPhoneClick"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/voPhone"
+        app:layout_constraintTop_toBottomOf="@+id/voPhone" />
+
+    <TextView
+        android:id="@+id/voEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Email:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voPhoneClick" />
+
+    <TextView
+        android:id="@+id/voEmailClick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onEmailClick"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/voEmail"
+        app:layout_constraintTop_toBottomOf="@+id/voEmail" />
+
+    <TextView
+        android:id="@+id/voWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Website:"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voEmailClick" />
+
+    <TextView
+        android:id="@+id/voWebsiteClick"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onWebsiteClick"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/voWebsite"
+        app:layout_constraintTop_toBottomOf="@+id/voWebsite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
